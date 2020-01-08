@@ -6224,7 +6224,7 @@ a.close.disabled {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -6238,7 +6238,7 @@ a.close.disabled {
   position: relative;
   display: none;
   float: left;
-  width: 100%;
+  width: 100vw;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -6250,6 +6250,7 @@ a.close.disabled {
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
+	
   }
 }
 
@@ -6257,6 +6258,7 @@ a.close.disabled {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  
 }
 
 .carousel-item-next:not(.carousel-item-left),
