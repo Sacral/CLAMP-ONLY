@@ -23,82 +23,25 @@
 </style>
 <body>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a href="index.html"> <img src="img/1029-CLAMP ONLY-LOGO.png" width="45" height="45"></a>
-            <!--<a class="navbar-brand" href="index.html">CLAMP ONLY</a>-->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-
-                        <!--
-                           a class="nav-link" href="about.html">首頁</a>
-                        -->
-                        <a class="nav-link" href="index.html">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activity.html">活動資訊</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <!-- <a class="nav-link" href="contact.html">社團相關</a>-->
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            社團相關
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-
-                            <a class="dropdown-item" href="club.html">社團報名須知</a>
-                        </div>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            入場規則
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <!--
-                            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-                            -->
-
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            關卡企劃
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="portfolio-1-col.html">首頁輪播圖投稿</a>
-                            <a class="dropdown-item" href="portfolio-1-1-col.html">關卡活動</a>
-                            <a class="dropdown-item" href="portfolio-1-2-col.html">大會商品</a>
-                        </div>
-
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            感謝不完
-                        </a>
-                        <!--
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                          <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                          <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                          <a class="dropdown-item" href="faq.html">FAQ</a>
-                          <a class="dropdown-item" href="404.html">404</a>
-                          <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                          -->
-
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" 　>
+        <div class="container" id="qqq">
         </div>
     </nav>
-    <!-- Page Content -->
+    <script>
+        function TopScript() {
+            $.ajax({
+                url: "nav.txt",
+                type: "GET",
+                success: function (msg) {
+                    console.log(msg);
+                    $("#qqq").html(msg);
+                }
+            });
+        }
+        $(document).ready(function () {
+            TopScript();
+        });
+    </script>
     <div class="container">
         <!-- Page Heading/Breadcrumbs -->
         <h1 class="mt-4 mb-3">
@@ -112,7 +55,7 @@
         </ol>
         <!-- Project One -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" style="text-align:justify">
                 <h3>社團報名須知</h3>
                 <hr>
                 1. 一個攤位是450元，兩個攤位是900元。最多僅能報兩個攤位。
@@ -138,7 +81,7 @@
             <div class="col-md-6">
                 <h3>社團報名注意事項</h3>
                 <hr>
-                <p>
+                <p style="text-align:justify">
                     壹、攤位商品僅限於CLAMP相關作品之刊物、無料或周邊，請勿販售毫無相關之商品。
                     <br>
                     <br>貳、至少須有一本以上刊物或兩種以上周邊，並且請勿販售官方商品（商業攤除外）、盜版產物及未獲授權販售之其他社團商品。
@@ -159,8 +102,10 @@
                     <br>
                     <br>玖、違反上述規則之社團，主辦方有權力要求停止其販售行為與取消社團資格，概不退還攤位費用。
                     <br>
-                    <br>註明：
-                    <br>CLAMP作品→聖傳、怪盜千面人、東京巴比倫、學園特警、白姬抄、CLAMP學園偵探團、X、新·春香傳、美幸夢遊仙境、魔法騎士雷阿斯、少女情懷總是詩、左手、Wish、庫洛魔法使、庫洛魔法使〝透明牌篇〞、CLOVER、喜歡。所以喜歡、ANGELIC LAYER 天使領域、迷幻藥局、迷幻藥局DRUG＆DROP、Chobits、TSUBASA翼、（含TSUBASA翼 夢幻之島篇）、xxxHOLiC（含xxxHOLiC·戻）、奇蹟少女KOBATO.、GATE 7～7號閘門～
+                    <br>拾、本only活動保留更換活動場地之權利。
+                    <br>
+                    <br><h5>註明：</h5>
+                    <h6 style="text-align:justify">CLAMP作品→聖傳、怪盜千面人、東京巴比倫、學園特警、白姬抄、CLAMP學園偵探團、X、新·春香傳、美幸夢遊仙境、魔法騎士雷阿斯、少女情懷總是詩、左手、Wish、庫洛魔法使、庫洛魔法使〝透明牌篇〞、CLOVER、喜歡。所以喜歡、ANGELIC LAYER 天使領域、迷幻藥局、迷幻藥局DRUG＆DROP、Chobits、TSUBASA翼、（含TSUBASA翼 夢幻之島篇）、xxxHOLiC（含xxxHOLiC·戻）、奇蹟少女KOBATO.、GATE 7～7號閘門～</h6>
 
 
                 </p>
