@@ -28,8 +28,8 @@
             $.ajax({
                 url: "./nav.html",
                 type: "GET",
-                dataType: 'jsonp',
                 success: function (msg) {
+                    console.log(msg);
                     $("#q").html(msg);
                 }
             });
