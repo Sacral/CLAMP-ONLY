@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿
     <a href="index.html"> <img src="img/1029-CLAMP ONLY-LOGO.png" width="45" height="45"></a>
     <!--<a class="navbar-brand" href="index.html">CLAMP ONLY</a>-->
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,4 +73,3 @@
             </li>
         </ul>
     </div>
-</div>
